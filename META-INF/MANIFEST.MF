@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SDB
+Bundle-SymbolicName: com.datagardens.nq.sdb; singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: DataGardens Inc.
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.ui
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

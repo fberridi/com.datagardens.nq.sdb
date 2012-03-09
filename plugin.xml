@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            icon="icons/16x16/qip_at_home.png">
+         <run
+               class="com.datagardens.nq.sdb.MainConsole">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="com.datagardens.nq.sdb.Perspective"
+            id="com.datagardens.nq.sdb.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="com.datagardens.nq.sdb.views.ContactsView"
+            id="com.datagardens.nq.sdb.views.contacts"
+            name="Contacts"
+            restorable="true">
+      </view>
+   </extension>
+
+</plugin>
